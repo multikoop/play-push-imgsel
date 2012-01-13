@@ -1,0 +1,97 @@
+#{extends 'main.html' /}
+<div class="container-fluid">
+
+    <div class="sidebar">
+        <div class="well">
+            <h5>Select an image</h5>
+            <ul>
+                <li><a id="link1" href="#">Image 1</a></li>
+                <li><a id="link2" href="#">Image 2</a></li>
+            </ul>
+            <h5>Monitor</h5>
+            <ul>
+                <li><a id="linkCloseSocket" href="#">Do not disturb</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="span12 well">
+                <ul class="media-grid">
+                    <li>
+                        <a href="#">
+                            <!--  -->
+                            <img id="img" class="thumbnail" src="" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="span12">
+                Inspired by the post of Lucas Jellema <a href="http://technology.amis.nl/blog/14777/push-based-synchronized-slideshow-web-application-implemented-using-websockets-and-kaazing-websocket-gateway">http://technology.amis.nl/blog/14777/push-based-synchronized-slideshow-web-application-implemented-using-websockets-and-kaazing-websocket-gateway</a>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2012 Andreas Koop,<a href="http://twitter.com/multikoop">@multikoop</a>, <a href="http://multikoop.blogspot.com">Blog</a></p>
+        </footer>
+    </div>
+</div>
+<script type="text/javascript">
+
+    var doNotDisturb = false;
+    function selectImage1(){
+        $('#link1').attr('class','label success');
+        $('#link2').attr('class','');
+        $('#img').attr('src','/public/images/nature1.jpg');
+    };
+    function selectImage2(){
+        $('#link2').attr('class','label success');
+        $('#link1').attr('class','');
+        $('#img').attr('src','/public/images/nature2.jpg');
+    };
+
+    function selectImage(id){
+        if(id == '#link1'){
+            selectImage1();
+        }else{
+            selectImage2();
+        }
+    };
+
+    // Create a socket
+    var socket = new WebSocket('@@{Application.PushSelectionSocket.process()}');
+
+    // Message received on the socket
+    socket.onmessage = function(event) {
+       if(!doNotDisturb){
+         selectImage(event.data);
+       }
+    };
+
+    $('#link1').click(function() {
+        selectImage1();
+        socket.send('#link1');
+    });
+
+    $('#link2').click(function() {
+        selectImage2();
+        socket.send('#link2');
+    });
+
+    $('#linkCloseSocket').click(function() {
+        doNotDisturb = !doNotDisturb;
+        if(doNotDisturb){
+            $('#linkCloseSocket').attr('class','label warning');
+        }else{
+            $('#linkCloseSocket').attr('class','');
+        }
+    });
+
+    // initial selection
+    $('#link1').click();
+
+
+</script>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WebSocket Demo</title>
+    <meta name="description" content="Andreas Koop - WebSocket Demo - Push Image Select">
+    <meta name="author" content="Andreas Koop">
+    <meta charset="${_response_encoding}">
+
+    <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/bootstrap.css'}">
+    <style type="text/css">
+        body {
+        padding-top: 60px;
+        }
+    </style>
+    #{get 'moreStyles' /}
+    <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
+    <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+    #{get 'moreScripts' /}
+</head>
+
+<body>
+
+<div class="topbar">
+    <div class="topbar-inner">
+        <div class="container-fluid">
+            <a class="brand" href="#">WebSocket Demo</a>
+            <ul class="nav">
+                <li class="active"><a href="#">Push Image Selection</a></li>
+
+            </ul>
+            <ul class="nav pull-right">
+                <li><a href="http://multikoop.blogspot.com" target="_blank">Blog</a></li>
+                <li><a href="http://twitter.com/multikoop" target="_blank">@multikoop</a></li>
+            </ul>
+
+            <!--p class="pull-right"></p-->
+        </div>
+    </div>
+</div>
+
+#{doLayout /}
+
+
+
+</body>
+</html>
+
