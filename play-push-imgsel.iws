@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ede0bbe8-705f-4ce3-8b65-c846e93b0d49" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/play-push-imgsel.iws" afterPath="$PROJECT_DIR$/play-push-imgsel.iws" />
-    </list>
+    <list default="true" id="ede0bbe8-705f-4ce3-8b65-c846e93b0d49" name="Default" comment="" />
     <ignored path="play-push-imgsel.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -63,7 +61,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="80" selection-start="1867" selection-end="1867" vertical-scroll-proportion="0.7635934">
+            <state line="40" column="38" selection-start="1590" selection-end="1590" vertical-scroll-proportion="0.40189126">
               <folding />
             </state>
           </provider>
@@ -517,7 +515,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="80" selection-start="1867" selection-end="1867" vertical-scroll-proportion="0.7635934">
+        <state line="40" column="38" selection-start="1590" selection-end="1590" vertical-scroll-proportion="0.40189126">
           <folding />
         </state>
       </provider>

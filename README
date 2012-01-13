@@ -1,1 +1,4 @@
-This file was created by IntelliJ IDEA 11.0.1 for binding GitHub repository
+Play!ing with WebSockets
+------------------------
+- this play app demos the usage of WebSockets
+- it allows to push image selection to other clients
