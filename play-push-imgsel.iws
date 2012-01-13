@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ede0bbe8-705f-4ce3-8b65-c846e93b0d49" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/Application.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/Application/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/errors/404.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/errors/500.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/play-push-imgsel.iws" afterPath="$PROJECT_DIR$/play-push-imgsel.iws" />
     </list>
     <ignored path="play-push-imgsel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,7 +63,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="95" selection-start="2170" selection-end="2170" vertical-scroll-proportion="1.2458628">
+            <state line="49" column="80" selection-start="1867" selection-end="1867" vertical-scroll-proportion="0.7635934">
               <folding />
             </state>
           </provider>
@@ -521,7 +517,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="95" selection-start="2170" selection-end="2170" vertical-scroll-proportion="1.2458628">
+        <state line="49" column="80" selection-start="1867" selection-end="1867" vertical-scroll-proportion="0.7635934">
           <folding />
         </state>
       </provider>
